@@ -4,6 +4,6 @@ import { terser } from 'rollup-plugin-terser'
 
 export default {
   input: './src/content.js',
-  output: { file: 'content.js', format: 'es' },
+  output: { file: 'content.js', format: 'iife' },
   plugins: [nodeResolve(), json(), terser()]
 }

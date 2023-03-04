@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": [ "<all_urls>" ],
-      "js": [ "content.js" ]
+      "js": [ "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js", "content.js" ]
     }
   ],
   "web_accessible_resources": [],
