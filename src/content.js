@@ -24,6 +24,7 @@ document.addEventListener('selectionchange', function (e) {
       container.style.display = 'initial'
     }
     else {
+      container.style.display = 'none'
       container.textContent = ''
     }
 
