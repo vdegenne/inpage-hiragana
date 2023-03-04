@@ -42,7 +42,7 @@ document.addEventListener('selectionchange', function (e) {
 
 
 const container = document.createElement('div')
-container.setAttribute('style', 'position:fixed;top:0;left:0;background-color:#000000aa;color:white;z-index:999999999999999;padding: 2px 5px')
+container.setAttribute('style', 'display:none;position:fixed;top:0;left:0;background-color:#000000aa;color:white;z-index:999999999999999;padding: 2px 5px')
 document.body.appendChild(container)
 
 container.addEventListener('contextmenu', function (e) {
