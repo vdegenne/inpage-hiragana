@@ -19,7 +19,7 @@ document.addEventListener('selectionchange', function (e) {
     const result = relations.find(function (pair) {
       return pair[0] === selection
     })
-    if (result) {
+    if (result && result[1]) {
       container.textContent = result[1]
       container.style.display = 'initial'
     }
