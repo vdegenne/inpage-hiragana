@@ -19,11 +19,12 @@ document.addEventListener('selectionchange', function (e) {
     const result = relations.find(function (pair) {
       return pair[0] === selection
     })
-    if (result) {
+    if (result && result[1]) {
       container.textContent = result[1]
       container.style.display = 'initial'
     }
     else {
+      container.style.display = 'none'
       container.textContent = ''
     }
 
@@ -42,7 +43,7 @@ document.addEventListener('selectionchange', function (e) {
 
 
 const container = document.createElement('div')
-container.setAttribute('style', 'display:none;position:fixed;top:0;left:0;background-color:#000000aa;color:white;z-index:999999999999999;padding: 2px 5px')
+container.setAttribute('style', 'display:none;position:fixed;top:0;left: calc(100vw / 2 - 60px);background-color:#000000aa;color:white;z-index:999999999999999;padding: 2px 5px')
 document.body.appendChild(container)
 
 container.addEventListener('contextmenu', function (e) {
