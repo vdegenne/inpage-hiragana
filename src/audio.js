@@ -41,6 +41,6 @@ export async function playJapaneseAudio(word) {
     await playJapanese(word)
   } catch (e) {
     audioMap[word] = null
-    await speakJapanese(word, 0.9, 1)
+    await speakJapanese(word, 0.9, 1, 0.8)
   }
 }
